@@ -1,11 +1,13 @@
-package me.motemere.ticktacktoe;
+package me.motemere.ticktacktoe.model;
+
+import me.motemere.ticktacktoe.utils.Utils;
 
 public class Field {
 
   private final Point[][] base;
 
-  public Field() {
-    base = new Point[3][3];
+  public Field(Point[][] base) {
+    this.base = base;
   }
 
   public boolean checkPoint(Point newPoint) {
@@ -54,5 +56,23 @@ public class Field {
     }
 
     return false;
+  }
+
+  public static class Builder {
+
+    private Point[][] base = null;
+
+    public Builder base(Point[][] base) {
+      this.base = base;
+      return this;
+    }
+
+    public Field build() {
+      if (this.base == null) {
+        throw new NullPointerException();
+      }
+
+      return new Field(this.base);
+    }
   }
 }

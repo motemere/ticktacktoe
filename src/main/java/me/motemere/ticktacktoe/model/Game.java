@@ -1,4 +1,7 @@
-package me.motemere.ticktacktoe;
+package me.motemere.ticktacktoe.model;
+
+import me.motemere.ticktacktoe.utils.IWriter;
+import me.motemere.ticktacktoe.utils.Utils;
 
 public class Game {
 

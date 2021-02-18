@@ -1,8 +1,9 @@
-package me.motemere.ticktacktoe;
+package me.motemere.ticktacktoe.utils;
 
 import java.util.InputMismatchException;
 import java.util.Iterator;
 import java.util.Scanner;
+import me.motemere.ticktacktoe.model.Point;
 
 public class Utils {
 

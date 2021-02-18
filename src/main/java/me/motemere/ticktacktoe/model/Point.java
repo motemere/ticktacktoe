@@ -1,4 +1,4 @@
-package me.motemere.ticktacktoe;
+package me.motemere.ticktacktoe.model;
 
 public class Point {
 
